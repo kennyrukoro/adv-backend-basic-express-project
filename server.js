@@ -10,7 +10,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-  res.send('you can reach me at k.rogers@email.com');
+  res.send('you can reach me at hello@example.com');
 });
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
