@@ -12,6 +12,15 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.send('you can reach me at hello@example.com');
 });
+app.get('/users', (req, res) => {
+  const users = [
+    { id: 1, name: 'kel' },
+    { id: 2, name: 'ken' },
+    { id: 3, name: 'kex' }
+  ];
+
+  res.json(users);
+});
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
